@@ -25,32 +25,32 @@ class Projects extends Component {
 
             <Col className="m-5"xl={3}>
                 <Card  className="p-2"   style={{ minWidth: '350px' }}>
-                <Card.Img variant="top" src={ProjectOne} />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    </Card.Text>
-                    <Button className="m-2" variant="primary">Live Demo</Button>
-                            <Button className="m-2" variant="primary">View Code</Button>
-                </Card.Body>
+                    <Card.Img variant="top" src={ProjectOne} />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                            Some quick example text to build on the card title and make up the bulk of
+                            the card's content.
+                            </Card.Text>
+                            <Button className="m-2" variant="primary">Live Demo</Button>
+                                    <Button className="m-2" variant="primary">View Code</Button>
+                        </Card.Body>
                 </Card>
             </Col>
 
             <Col className="m-5"xl={3}>
                 <Card  className="p-2"  style={{ minWidth: '350px' }}>
-                <Card.Img variant="top" src={ProjectOne} />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    </Card.Text>
-                    <Button className="m-2" variant="primary">Live Demo</Button>
-                            <Button className="m-2" variant="primary">View Code</Button>
-                </Card.Body>
-                </Card>
+                    <Card.Img variant="top" src={ProjectOne} />
+                    <Card.Body>
+                        <Card.Title>Card Title</Card.Title>
+                        <Card.Text>
+                        Some quick example text to build on the card title and make up the bulk of
+                        the card's content.
+                        </Card.Text>
+                        <Button className="m-2" variant="primary">Live Demo</Button>
+                                <Button className="m-2" variant="primary">View Code</Button>
+                    </Card.Body>
+                    </Card>
             </Col>
         </Row>
     );

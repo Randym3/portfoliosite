@@ -5,6 +5,7 @@
   src: local('ErbosDraco Nova NBP Regular'), url('erbosdraco_nova_nbp.woff') format('woff');
   }
   
+
   
   @font-face {
   font-family: 'ErbosDraco Nova Open NBP Regular';
@@ -40,10 +41,6 @@ nav.collapsed-opacity {
     padding-top: 200px;
     padding-bottom: 100px;
 
-}
-
-.page-logo2:hover{
-  scale: 2;
 }
 
 .page-logo{
@@ -118,10 +115,14 @@ button.button-banner:hover {
     transform: scale(1.2);
 }
 
-/* Project Row */
+/* About Me */
+.aboutme-img {
+  transition: transform .2s ease-in-out;
 
-.project-row div{
-
+}
+.aboutme-img:hover {
+    box-shadow: 0 15px 25px rgba(29, 64, 221, 0.5);
+    transform: scale(1.1);
 }
 
 
