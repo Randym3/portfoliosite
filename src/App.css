@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'ErbosDraco Nova NBP Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ErbosDraco Nova NBP Regular'), url('erbosdraco_nova_nbp.woff') format('woff');
+  }
+  
+  
+  @font-face {
+  font-family: 'ErbosDraco Nova Open NBP Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('ErbosDraco Nova Open NBP Regular'), url('erbosdraco_nova_open_nbp.woff') format('woff');
+  }
+
+ .navbar-dark .navbar-nav a.nav-link { 
+      transition: all .3s ease-in-out;
+       font-size: 25px;
+      padding: 20px 30px;
+      font-weight: 400;
+}
+.navbar-dark a.navbar-brand{    
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 2px;
+        font-weight: 500;
+        font-size:  28px;
+}
+nav.fixed-top {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: transparent !important;
+}
+nav.collapsed-opacity {
+  
+}
+
+.banner-gradient {
+    height: 100%;
+    background: #fc4a1a;  
+    background: linear-gradient(to top, #5c258d 10%, #436fa2);
+    padding-top: 200px;
+    padding-bottom: 100px;
+
+}
+
+.page-logo2:hover{
+  scale: 2;
+}
+
+.page-logo{
+    height: 300px;
+    width: 300px;
+    background:
+    linear-gradient(63deg, #333 23%, transparent 23%) 7px 0,
+    linear-gradient(63deg, transparent 74%, #333 78%),
+    linear-gradient(63deg, transparent 34%, #333 38%, #333 58%, transparent 62%);
+    background-size: 16px 48px;;
+    border-radius: 50%;
+ }
+    /*Media query for Typewriter */
+@media screen and (min-width: 750px) {
+  .typewriter{
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .typewriter{
+    font-size: 7vw;
+  }
+  .other{
+    font-size: 4.5vw;
+  }
+}
+/*Typewriter effect on landing page + styling */
+.typewriter{
+    width: 750px !important;
+    font-family: 'ErbosDraco Nova Open NBP Regular';
+    color: white ;
+    font-weight: bold;
+    text-shadow: #504e4e;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+  }
+  
+  .other{
+    animation: type2 6s steps(60, end);
+    word-wrap: break-word !important;
+
+  }
+ 
+  
+  span.blinker{
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  /*Button Hover effects*/
+button.button-banner {
+  transition: transform .3s ease-in-out;
+
+}
+button.button-banner:hover {
+    box-shadow: 0 15px 25px rgba(245, 245, 245, 0.3);
+    transform: scale(1.2);
+}
+
+/* Project Row */
+
+.project-row div{
+
+}
+
+
+.test-skew {
+    position: absolute;
+    left:  25%;
+    height: 700px;
+    background: linear-gradient(45deg,#0455ff 1%,#ef37ee)!important;
+    width: 50%;
+    overflow: hidden;
+    -webkit-transform: skewY(-12deg);
+    transform: skewY(-12deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    background: #f4f7fc;
+}
