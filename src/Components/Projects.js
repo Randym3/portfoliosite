@@ -7,7 +7,8 @@ class Projects extends Component {
 
   render() {
     return (
-        <Row className=" justify-content-around  project-row ">
+        <Row className=" justify-content-around " style={{backgroundColor: "white"}}>
+        <div className="project-bg"></div>
             <Col className="m-5"xl={3}>
                     <Card  className="p-2" style={{ minWidth: '350px' }}>
                         <Card.Img variant="top" src={ProjectOne} />
@@ -17,8 +18,8 @@ class Projects extends Component {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                             </Card.Text>
-                            <Button className="m-2" variant="primary">Live Demo</Button>
-                            <Button className="m-2" variant="primary">View Code</Button>
+                            <Button className="m-2" variant="warning">Live Demo</Button>
+                            <Button className="m-2" variant="warning">View Code</Button>
                         </Card.Body>
                     </Card>
             </Col>
@@ -32,8 +33,8 @@ class Projects extends Component {
                             Some quick example text to build on the card title and make up the bulk of
                             the card's content.
                             </Card.Text>
-                            <Button className="m-2" variant="primary">Live Demo</Button>
-                                    <Button className="m-2" variant="primary">View Code</Button>
+                            <Button className="m-2" variant="warning">Live Demo</Button>
+                                    <Button className="m-2" variant="warning">View Code</Button>
                         </Card.Body>
                 </Card>
             </Col>
@@ -47,8 +48,8 @@ class Projects extends Component {
                         Some quick example text to build on the card title and make up the bulk of
                         the card's content.
                         </Card.Text>
-                        <Button className="m-2" variant="primary">Live Demo</Button>
-                                <Button className="m-2" variant="primary">View Code</Button>
+                        <Button className="m-2" variant="warning">Live Demo</Button>
+                                <Button className="m-2" variant="warning">View Code</Button>
                     </Card.Body>
                     </Card>
             </Col>

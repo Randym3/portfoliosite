@@ -37,7 +37,7 @@ nav.collapsed-opacity {
 .banner-gradient {
     height: 100%;
     background: #fc4a1a;  
-    background: linear-gradient(to top, #5c258d 10%, #436fa2);
+    background: linear-gradient(to bottom, #de6262, #ffb88c);
     padding-top: 200px;
     padding-bottom: 100px;
 
@@ -125,17 +125,18 @@ button.button-banner:hover {
     transform: scale(1.1);
 }
 
+.jumbotron p {
+  font-size: 1.2em;
+}
 
-.test-skew {
-    position: absolute;
-    left:  25%;
-    height: 700px;
-    background: linear-gradient(45deg,#0455ff 1%,#ef37ee)!important;
-    width: 50%;
-    overflow: hidden;
-    -webkit-transform: skewY(-12deg);
-    transform: skewY(-12deg);
-    -webkit-transform-origin: 0;
-    transform-origin: 0;
-    background: #f4f7fc;
+
+div.project-bg {
+position: absolute;
+  height: 500px;
+  width: 100%;
+  content: '';
+  transform-origin: bottom right;
+  transform: skewY(2deg);
+  background: inherit;
+
 }
