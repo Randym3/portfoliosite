@@ -5,8 +5,6 @@
   src: local('ErbosDraco Nova NBP Regular'), url('erbosdraco_nova_nbp.woff') format('woff');
   }
   
-
-  
   @font-face {
   font-family: 'ErbosDraco Nova Open NBP Regular';
   font-style: normal;
@@ -37,7 +35,9 @@ nav.collapsed-opacity {
 .banner-gradient {
     height: 100%;
     background: #fc4a1a;  
-    background: linear-gradient(to bottom, #de6262, #ffb88c);
+    background: #ED4264;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding-top: 200px;
     padding-bottom: 100px;
 
@@ -87,7 +87,6 @@ nav.collapsed-opacity {
 
   }
  
-  
   span.blinker{
     animation: blink 1s infinite;
   }
@@ -111,11 +110,16 @@ button.button-banner {
 
 }
 button.button-banner:hover {
-    box-shadow: 0 15px 25px rgba(245, 245, 245, 0.3);
+    box-shadow: 0 15px 25px rgba(255, 52, 52, 0.4);
     transform: scale(1.2);
 }
 
 /* About Me */
+div.about-me {
+  margin-bottom: 0;
+  padding: 100px 1em;
+}
+
 .aboutme-img {
   transition: transform .2s ease-in-out;
 
@@ -129,14 +133,26 @@ button.button-banner:hover {
   font-size: 1.2em;
 }
 
-
 div.project-bg {
-position: absolute;
+  position: absolute;
   height: 500px;
   width: 100%;
   content: '';
   transform-origin: bottom right;
-  transform: skewY(2deg);
+  transform: skewY(2.5deg);
   background: inherit;
 
+}
+
+div.skills-container {
+  font-size: 25px;
+}
+div.skills-container .col-sm-12 {
+  border: 2px black solid;
+  padding: 8px;
+}
+div.skills-container h1 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 50px
+  
 }

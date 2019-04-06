@@ -3,6 +3,7 @@ import Header from './Components/Header'
 import LandingPage from './Components/LandingPage'
 import Projects from './Components/Projects'
 import AboutMe from './Components/AboutMe'
+import Skills from './Components/Skills'
 
 
 import './App.css';
@@ -13,8 +14,9 @@ class App extends Component {
       <div className="App">
         <Header />
         <LandingPage />
-        <Projects />
+        <Skills />
         <AboutMe />
+        <Projects />
     </div>
     );
   }

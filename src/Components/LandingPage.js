@@ -9,7 +9,7 @@ class LandingPage extends Component {
       <div className="banner-gradient text-center">
           <PageLogo />
           <TypeWriter />
-          <Button className=" button-banner" size="lg" variant="outline-light">
+          <Button className="button-banner" size="lg" variant="outline-dark">
               View Projects
           </Button>
        </div>
