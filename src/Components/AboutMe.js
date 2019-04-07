@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { Col, Jumbotron, Row } from 'react-bootstrap'
+import { Col, Row } from 'react-bootstrap'
 import pic from '../Images/aboutme.jpg'
 
 
 class AboutMe extends Component {
   render() {
-    return (
-        <Jumbotron className="about-me"   >
-            <Row className="text-center justify-content-around">
+    return (<div id="aboutMe" className="about-me">
+    
+            <Row className="  text-center justify-content-around">
+            
                 <Col className=" px-5 pb-5"xl={6} lg={10} xs={10}>
                     <h2>About Me</h2>
                     <hr />
@@ -25,8 +26,7 @@ class AboutMe extends Component {
                     <img className="aboutme-img " src={pic} width="550" alt="idea to production" />
                 </Col>
             </Row>
-
-        </Jumbotron>
+            </div>
             
     );
   }

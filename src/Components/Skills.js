@@ -5,55 +5,65 @@ import { Container, Row, Col } from 'react-bootstrap';
 class Skills extends Component {
   render() {
     return (
-        <Container className="text-center  skills-container">
+      <div className="skills-container">
+        <Container className="text-center mb-5 pb-5 ">
 
-            <h1>Front-End</h1>
+            <h1 className="py-5">Technological Skills</h1>
+            <p className="pb-5">If it adds value to your company, I'll learn it.</p>
             <hr />
 
-            <Row className="py-5 justify-content-center">
+            <Row className=" justify-content-center align-items-center pb-5">
 
-                <Col sm={12} md={3}>
-                <i class="fab fa-html5"></i> Html5
+                <Col  xs={8}sm={10} md={3}>
+                  <i class="fab fa-html5"></i> Html5
                 </Col>
 
-                <Col sm={12} md={3}>
-                <i class="fab fa-css3-alt"></i>  Css3
+                <Col  xs={8}sm={10} md={3}>
+                  <i class="fab fa-css3-alt"></i>  Css3
                 </Col>
 
-                <Col sm={12} md={3}>
-                <i class="fab fa-js-square"></i> Javascript 
+                <Col  xs={8}sm={10} md={3}>
+                  <i class="fab fa-js-square"></i> Javascript 
                 </Col>
+
+                <Col  xs={8}sm={10} md={3}>
+                <i class="fas fa-mobile"></i> Responsive Design
+                </Col>
+
                 
-                <Col sm={12} md={4}>
-                <i class="fab fa-js-square"></i> React 
+                <Col  xs={8}sm={10} md={3}>
+                <i class="fab fa-react"></i> ReactJS
                 </Col>
 
-                <Col sm={12} md={4}>
-                <i class="fab fa-js-square"></i> Bootstrap 4 
+                <Col  xs={8}sm={10} md={3}>
+                <i class="fab fa-bootstrap"></i> Bootstrap 4 
+                </Col>
+                <Col  xs={8}sm={10} md={3}>
+                <i class="fab fa-node-js"></i> Node
                 </Col>
 
-            </Row>
-
-
-            <h1>Back-End</h1>
-            <hr /> 
-            
-            <Row className="py-5 justify-content-center">
-            
-                <Col sm={12} md={3}>
-                <i class="fab fa-node"></i> Node
+                <Col  xs={8}sm={10} md={3}>
+                  <i class="fas fa-server"></i>  Express
                 </Col>
 
-                <Col sm={12} md={3}>
-                <i class="fas fa-server"></i>  Express
+                <Col  xs={8}sm={10} md={3}>
+                  <i class="fas fa-database"></i> PostgreSQL
                 </Col>
 
-                <Col sm={12} md={3}>
-                <i class="fas fa-database"></i> PostgreSQL
+                <Col  xs={8}sm={10} md={3}>
+                  <i class="fab fa-git-square"></i> Git 
                 </Col>
 
+                <Col  xs={8}sm={10} md={3}>
+                  <i class="fab fa-github"></i> GitHub 
+                </Col>
+
+                <Col  xs={8}sm={10} md={3}>
+                <i class="fab fa-npm"></i>
+                </Col>
             </Row>
         </Container>
+        </div>
     );
   }
 }
