@@ -4,9 +4,11 @@ import LandingPage from './Components/LandingPage'
 import Projects from './Components/Projects'
 import AboutMe from './Components/AboutMe'
 import Skills from './Components/Skills'
-
+import Socials from './Components/Socials'
+import Footer from './Components/Footer'
 
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -17,6 +19,8 @@ class App extends Component {
         <Skills />
         <Projects />
         <AboutMe />
+        <Socials />
+        <Footer />
     </div>
     );
   }

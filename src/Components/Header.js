@@ -2,9 +2,29 @@ import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
 
 class Header extends Component {
+
+  state = {
+    navbarclass: '',
+    navbarvariant: ''
+  }
+
+  listenScrollEvent = e => {
+    if (window.scrollY > 100) {
+      this.setState({navbarclass: 'scrollingnav'})
+      this.setState({navbarvariant:"dark"})
+    } else {
+      this.setState({navbarclass: 'topnav'})
+      this.setState({navbarvariant:"light"})
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+
   render() {
     return (
-        <Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+        <Navbar variant={this.state.navbarvariant} className={this.state.navbarclass} expand="lg" fixed="top">
           <Navbar.Brand href="#home">RANDY MENESES</Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">

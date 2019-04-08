@@ -5,14 +5,15 @@ import pic from '../Images/aboutme.jpg'
 
 class AboutMe extends Component {
   render() {
-    return (<div id="aboutMe" className="about-me">
+    return (
+    <div id="aboutMe" className="about-me">
     
-            <Row className="  text-center justify-content-around">
+            <Row className=" justify-content-around">
             
                 <Col className=" px-5 pb-5"xl={6} lg={10} xs={10}>
                     <h2>About Me</h2>
                     <hr />
-                    <h3>My name is Randy Meneses, and I'm a Full Stack Web Developer</h3>
+                    <h4>My name is Randy Meneses, and I'm a Full Stack Web Developer</h4> <br />
                     <p>
                         Firstly I'd like to thank you for checking out my page.
                     </p>

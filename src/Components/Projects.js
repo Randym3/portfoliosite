@@ -8,9 +8,10 @@ class Projects extends Component {
   render() {
     return (
         <div className="project-row" id="Projects">
+        <h1 className="text-center">Projects</h1>
             <Row className="  justify-content-around  " >
-                <Col className="m-5"xl={3} sm={6}>
-                        <Card  className="p-2" style={{ minWidth: '350px', maxWidth: "500px" }}>
+                <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
+                        <Card  className="p-2" style={{ minWidth: '350px' }}>
                             <Card.Img variant="top" src={ProjectOne} />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
@@ -25,8 +26,8 @@ class Projects extends Component {
                 </Col>
                 
 
-                <Col className="m-5"xl={3} sm={6}>
-                    <Card  className="p-2"   style={{ minWidth: '350px', maxWidth: "500px" }}>
+                <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
+                    <Card  className="p-2"   style={{ minWidth: '350px' }}>
                         <Card.Img variant="top" src={ProjectOne} />
                             <Card.Body>
                                 <Card.Title>Card Title</Card.Title>
@@ -40,8 +41,8 @@ class Projects extends Component {
                     </Card>
                 </Col>
 
-                <Col className="m-5"xl={3} sm={6}>
-                    <Card  className="p-2"  style={{ minWidth: '350px', maxWidth: "500px" }}>
+                <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
+                    <Card  className="p-2"  style={{ minWidth: '350px' }}>
                         <Card.Img variant="top" src={ProjectOne} />
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
