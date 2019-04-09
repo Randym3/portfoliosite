@@ -4,12 +4,12 @@ import { Navbar, Nav } from 'react-bootstrap'
 class Header extends Component {
 
   state = {
-    navbarclass: '',
-    navbarvariant: ''
+    navbarclass: 'topnav',
+    navbarvariant: 'light'
   }
 
   listenScrollEvent = e => {
-    if (window.scrollY > 100) {
+    if (window.scrollY > 50) {
       this.setState({navbarclass: 'scrollingnav'})
       this.setState({navbarvariant:"dark"})
     } else {
