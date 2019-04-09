@@ -12,15 +12,15 @@ class Socials extends Component {
           <Col className="socials py-5" xl={6} lg={10} xs={10}>
           <h3>Socials</h3>
           <a href="https://www.linkedin.com/in/randy-meneses-00699b12a/">
-          <i class="fab fa-linkedin-in"></i>
+          <i className="fab fa-linkedin-in"></i>
           </a>
          
 
           <a href="https://github.com/Randym3">
-          <i class="fab fa-github"></i></a>
+          <i className="fab fa-github"></i></a>
           
           <a href="mailto:MenesesRandy@gmail.com">
-          <i class="far fa-envelope"> </i> </a>
+          <i className="far fa-envelope"> </i> </a>
           </Col>
 
           <Col className="contact" xl={6} lg={10} xs={12}>

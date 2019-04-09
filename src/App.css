@@ -27,7 +27,7 @@ nav.topnav {
 }
 nav.scrollingnav{
   transition: all .3s ease-in-out;
-  background-color: rgba(42, 42, 42, 0.3);
+  background-color: rgba(42, 42, 42, 0.8);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   box-shadow: 0 2px 5px black;
@@ -58,22 +58,25 @@ nav.scrollingnav{
   .typewriter{
     font-size: 2em;
   }
+  .other{
+    font-size: 1.5em;
+  }
 }
 
 @media screen and (max-width: 750px) {
   .typewriter{
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .other{
-    font-size: 4.5vw;
+    font-size: 4vw;
   }
 }
 
 /*Typewriter effect on landing page + styling */
 .typewriter{
-    width: 750px !important;
-    font-family: 'ErbosDraco Nova Open NBP Regular';
-    color: white ;
+    width: 400px !important;
+
+    color: black ;
     font-weight: bold;
     text-shadow: #504e4e;
     white-space: nowrap;
@@ -123,19 +126,20 @@ div.about-me {
 .aboutme-img {
   transition: transform .2s ease-in-out;
   box-shadow: 0 15px 25px #43c6c6b6;
+  width: 75%;
+}
 
+@media screen and (max-width: 700px) {
+  .aboutme-img{
+    width: 100%;
+  }
 }
 .aboutme-img:hover {
     transform: scale(1.1);
 }
 
-.jumbotron p {
-  font-size: 1.2em;
-}
-
 div.project-row {
   background: linear-gradient(to left, #43c6ac, #f8ffae 70%);
-
 }
 
 div.project-row::before{
@@ -207,7 +211,6 @@ div.socials i:hover {
   transform: scale(1.2);
 }
   
-
 .connect i {
   padding: 15px;
   margin: 15px;

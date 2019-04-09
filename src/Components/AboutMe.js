@@ -10,7 +10,7 @@ class AboutMe extends Component {
     
             <Row className=" justify-content-around">
             
-                <Col className=" px-5 pb-5"xl={6} lg={10} xs={10}>
+                <Col className=" px-5 pb-5"xl={6} lg={10} xs={12}>
                     <h2>About Me</h2>
                     <hr />
                     <h4>My name is Randy Meneses, and I'm a Full Stack Web Developer</h4> <br />
@@ -23,8 +23,8 @@ class AboutMe extends Component {
                     </p>
                 </Col>
 
-                <Col xl={6}  className=" text-center">
-                    <img className="aboutme-img " src={pic} width="550" alt="idea to production" />
+                <Col xl={6} lg={10} xs={10}  className=" text-center">
+                    <img className="aboutme-img " src={pic} alt="idea to production" />
                 </Col>
             </Row>
             </div>
