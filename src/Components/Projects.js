@@ -1,65 +1,73 @@
-import React, { Component } from 'react';
-import { Row, Col , Card, Button} from 'react-bootstrap';
-import ProjectOne from '../Images/macbook.png'
-
+import React, { Component } from "react";
+import { Row, Col, Card, Button } from "react-bootstrap";
+import ProjectOne from "../Images/macbook.png";
+import ProjectTwo from "../Images/portfolio.png";
 
 class Projects extends Component {
-
   render() {
     return (
-        <div className="project-row" id="Projects">
+      <div className="project-row projects">
         <h1 className="text-center">Projects</h1>
-            <Row className="  justify-content-around  " >
-                <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
-                        <Card  className="p-2" style={{ minWidth: '350px' }}>
-                            <Card.Img variant="top" src={ProjectOne} />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button className="m-2" variant="warning">Live Demo</Button>
-                                <Button className="m-2" variant="warning">View Code</Button>
-                            </Card.Body>
-                        </Card>
-                </Col>
-                
+        <p className="text-center">
+          I am constantly working on side projects; they are only displayed here
+          once I am satisfied with them.
+        </p>
+        <hr />
+        <Row className="  justify-content-center  ">
+          <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
+            <Card className="p-2" style={{ minWidth: "350px" }}>
+              <Card.Img variant="top" src={ProjectOne} />
+              <Card.Body>
+                <Card.Title>Flixify</Card.Title>
+                <Card.Text>
+                  Simplie and responsive web application that allows users to
+                  browse for movies and TV shows.
+                </Card.Text>
+                <a href="https://flixify.netlify.com" target="blank">
+                  <Button className="m-2" variant="warning">
+                    <i class="fas fa-eye" /> Live Demo
+                  </Button>
+                </a>
+                <a href="https://github.com/Randym3/flixify" target="blank">
+                  <Button className="m-2" variant="warning">
+                    <i class="fas fa-code" /> {` `}
+                    View Code
+                  </Button>
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
 
-                <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
-                    <Card  className="p-2"   style={{ minWidth: '350px' }}>
-                        <Card.Img variant="top" src={ProjectOne} />
-                            <Card.Body>
-                                <Card.Title>Card Title</Card.Title>
-                                <Card.Text>
-                                Some quick example text to build on the card title and make up the bulk of
-                                the card's content.
-                                </Card.Text>
-                                <Button className="m-2" variant="warning">Live Demo</Button>
-                                        <Button className="m-2" variant="warning">View Code</Button>
-                            </Card.Body>
-                    </Card>
-                </Col>
-
-                <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
-                    <Card  className="p-2"  style={{ minWidth: '350px' }}>
-                        <Card.Img variant="top" src={ProjectOne} />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                            </Card.Text>
-                            <Button className="m-2" variant="warning">Live Demo</Button>
-                                    <Button className="m-2" variant="warning">View Code</Button>
-                        </Card.Body>
-                        </Card>
-                </Col>
-            </Row>
-        </div>
+          <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
+            <Card className="p-2" style={{ minWidth: "350px" }}>
+              <Card.Img variant="top" src={ProjectTwo} />
+              <Card.Body>
+                <Card.Title>RandyM3 - Portfolio</Card.Title>
+                <Card.Text>
+                  Simple portfolio website, designed and coded by myself to
+                  showcase my work.
+                </Card.Text>
+                <a href="https://Randym3.netlify.com" target="blank">
+                  <Button className="m-2" variant="warning">
+                    <i class="fas fa-eye" /> Live Demo
+                  </Button>
+                </a>
+                <a
+                  href="https://github.com/Randym3/portfoliosite"
+                  target="blank"
+                >
+                  <Button className="m-2" variant="warning">
+                    <i class="fas fa-code" /> {` `}
+                    View Code
+                  </Button>
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+      </div>
     );
   }
-
 }
 
 export default Projects;

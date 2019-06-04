@@ -1,44 +1,79 @@
-import React, { Component } from 'react';
-import { Navbar, Nav } from 'react-bootstrap'
+import React, { Component } from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { Link } from "react-scroll";
 
 class Header extends Component {
-
   state = {
-    navbarclass: 'topnav',
-    navbarvariant: 'light'
-  }
+    navbarclass: "topnav",
+    navbarvariant: "light"
+  };
 
   listenScrollEvent = e => {
     if (window.scrollY > 50) {
-      this.setState({navbarclass: 'scrollingnav'})
-      this.setState({navbarvariant:"dark"})
+      this.setState({ navbarclass: "scrollingnav" });
+      this.setState({ navbarvariant: "dark" });
     } else {
-      this.setState({navbarclass: 'topnav'})
-      this.setState({navbarvariant:"light"})
+      this.setState({ navbarclass: "topnav" });
+      this.setState({ navbarvariant: "light" });
     }
-  }
+  };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent)
+    window.addEventListener("scroll", this.listenScrollEvent);
   }
 
   render() {
     return (
-        <Navbar variant={this.state.navbarvariant} className={this.state.navbarclass} expand="lg" fixed="top">
-          <Navbar.Brand href="#home">RANDY MENESES</Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbar-nav" />
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="mr-auto">
-                  <Nav.Link href="#aboutMe">About Me</Nav.Link>
-                  <Nav.Link href="#Projects">Projects</Nav.Link>
-              </Nav>
-              <Nav  >
-                  <Nav.Link href="#Contact-Me">Contact Me</Nav.Link>
-                  <Nav.Link href="#Resume">Resume</Nav.Link> 
-              </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-
+      <Navbar
+        variant={this.state.navbarvariant}
+        className={`text-center ${this.state.navbarclass}`}
+        expand="lg"
+        fixed="top"
+      >
+        <Navbar.Brand href="/">Randy Meneses</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Collapse id="navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link>
+              <Link
+                activeClass="active"
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                About Me
+              </Link>
+            </Nav.Link>
+            <Nav.Link>
+              {" "}
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Projects
+              </Link>
+            </Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link>
+              {" "}
+              <Link
+                activeClass="active"
+                to="contactMe"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
+                Contact Me
+              </Link>
+            </Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
     );
   }
 }

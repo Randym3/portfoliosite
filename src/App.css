@@ -1,32 +1,27 @@
-@font-face {
-      font-family: 'ErbosDraco Nova NBP Regular';
-      font-style: normal;
-      font-weight: normal;
-      src: local('ErbosDraco Nova NBP Regular'), url('erbosdraco_nova_nbp.woff') format('woff');
-  }
-  
-  @font-face {
-      font-family: 'ErbosDraco Nova Open NBP Regular';
-      font-style: normal;
-      font-weight: normal;
-      src: local('ErbosDraco Nova Open NBP Regular'), url('erbosdraco_nova_open_nbp.woff') format('woff');
-  }
-
-.navbar-light .navbar-nav a.nav-link , .navbar-dark .navbar-nav a.nav-link{ 
-      transition: all .3s ease-in-out;
-      font-size: 20px;
-      padding: 10px 15px;
-      font-weight: bold;
+body {
+  font-family: sans-serif !important;
 }
-.navbar-light a.navbar-brand, .navbar-dark a.navbar-brand{    
-        font-size:  23px;
+p {
+  color: #333;
+}
+
+.navbar-light .navbar-nav a.nav-link,
+.navbar-dark .navbar-nav a.nav-link {
+  transition: all 0.3s ease-in-out;
+  font-size: 23px;
+  padding: 10px 15px;
+  font-weight: bold;
+}
+.navbar-light a.navbar-brand,
+.navbar-dark a.navbar-brand {
+  font-size: 27px;
 }
 nav.topnav {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   background-color: transparent;
 }
-nav.scrollingnav{
-  transition: all .3s ease-in-out;
+nav.scrollingnav {
+  transition: all 0.3s ease-in-out;
   background-color: rgba(42, 42, 42, 0.8);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -34,87 +29,102 @@ nav.scrollingnav{
 }
 
 .banner-gradient {
-    height: 100%;
-    background: #fc4a1a;  
-    background: #ED4264;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding-top: 100px;
-    padding-bottom: 100px;
+  height: 100%;
+  background: #fc4a1a;
+  background: #ed4264; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ffedbc,
+    #ed4264
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ffedbc,
+    #ed4264
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
-.page-logo{
-    height: 250px;
-    width: 250px;
-    background:
-    linear-gradient(63deg, #333 23%, transparent 23%) 7px 0,
+.page-logo {
+  height: 250px;
+  width: 250px;
+  background: linear-gradient(63deg, #333 23%, transparent 23%) 7px 0,
     linear-gradient(63deg, transparent 74%, #333 78%),
     linear-gradient(63deg, transparent 34%, #333 38%, #333 58%, transparent 62%);
-    background-size: 16px 48px;;
-    border-radius: 50%;
- }
-    /*Media query for Typewriter */
+  background-size: 16px 48px;
+  border-radius: 50%;
+}
+/*Media query for Typewriter */
 @media screen and (min-width: 750px) {
-  .typewriter{
+  .typewriter {
     font-size: 2em;
   }
-  .other{
+  .other {
     font-size: 1.5em;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .typewriter{
+  .typewriter {
     font-size: 6vw;
   }
-  .other{
+  .other {
     font-size: 4vw;
   }
 }
 
 /*Typewriter effect on landing page + styling */
-.typewriter{
-    width: 400px !important;
+.typewriter {
+  width: 400px !important;
+  color: black;
+  font-weight: bold;
+  text-shadow: #504e4e;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 2s steps(60, end);
+}
 
-    color: black ;
-    font-weight: bold;
-    text-shadow: #504e4e;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 30em;
-    animation: type 4s steps(60, end); 
+.other {
+  animation: type2 4s steps(60, end);
+  word-wrap: break-word !important;
+}
+
+span.blinker {
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
   }
-  
-  .other{
-    animation: type2 6s steps(60, end);
-    word-wrap: break-word !important;
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
   }
- 
-  span.blinker{
-    animation: blink 1s infinite;
+  50% {
+    width: 0;
   }
-  
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
-  
-  @keyframes type2{
-    0%{width: 0;}
-    50%{width: 0;}
-    100%{ width: 100; } 
-  } 
-  
-  @keyframes blink{
-    to{opacity: .0;}
+  100% {
+    width: 100;
   }
-  /*Button Hover effects*/
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+/*Button Hover effects*/
 button.button-banner {
-  transition: transform .3s ease-in-out;
-
+  transition: transform 0.3s ease-in-out;
 }
 button.button-banner:hover {
-    box-shadow: 0 15px 25px rgba(255, 52, 170, 0.4);
-    transform: scale(1.2);
+  box-shadow: 0 15px 25px rgba(255, 52, 170, 0.4);
+  transform: scale(1.2);
 }
 
 /* About Me */
@@ -124,30 +134,30 @@ div.about-me {
 }
 
 .aboutme-img {
-  transition: transform .2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   box-shadow: 0 15px 25px #43c6c6b6;
   width: 75%;
 }
 
 @media screen and (max-width: 700px) {
-  .aboutme-img{
+  .aboutme-img {
     width: 100%;
   }
 }
 .aboutme-img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 div.project-row {
   background: linear-gradient(to left, #43c6ac, #f8ffae 70%);
 }
 
-div.project-row::before{
+div.project-row::before {
   position: absolute;
   height: 500px;
   z-index: -1;
   width: 100%;
-  content: '';
+  content: "";
   transform-origin: top right;
   transform: skewY(2.5deg);
   background: linear-gradient(to left, #43c6ac, #f8ffae 70%);
@@ -158,33 +168,32 @@ div.project-row::after {
   height: 130px;
   width: 100%;
   z-index: -1;
-  content: '';
+  content: "";
   transform-origin: top right;
   transform: skewY(2.5deg);
   background: linear-gradient(to left, #43c6ac, #f8ffae 70%);
 }
 
-div.skills-container .col-sm-10 {
-    font-weight: bold;
-    margin: 10px;
-    border: 2px #f36d48c7 solid ;
-    font-size: 18px;
-    background: #f36d48c7;
-    border-radius: 10px;
-    transition: all .2s ease-in-out;
+div.skills-container .col-sm-4 {
+  font-weight: bold;
+  margin: 5px;
+  border: 2px #f36d48c7 solid;
+  font-size: 18px;
+  background-color: #f36d48c7;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
 }
 
-div.skills-container .col-sm-10:hover {
+div.skills-container .col-sm-4:hover {
   background-color: transparent;
   transform: scale(1.1);
   color: #f36d48c7;
   box-shadow: 0 7px 15px rgba(255, 52, 52, 0.4);
 }
-  
+
 div.skills-container i {
   font-size: 30px;
 }
-
 
 div.connect a {
   text-decoration: none;
@@ -192,32 +201,32 @@ div.connect a {
 }
 
 div.connect a:hover {
-  color: #ED4264
+  color: #ed4264;
 }
 
 div.connect {
-  background: rgb(63,63,63);
-  color: whitesmoke
-}  
+  background-color: rgb(63, 63, 63);
+  color: whitesmoke;
+}
 
-div.socials i{
-  transition: all .3s ease-in-out
+div.socials i {
+  transition: all 0.3s ease-in-out;
 }
 div.socials i:hover {
   border: 2px black solid;
-  color: rgb(63,63,63);
-  background: whitesmoke;
+  color: rgb(63, 63, 63);
+  background-color: whitesmoke;
   box-shadow: 0 5px 15px whitesmoke;
   transform: scale(1.2);
 }
-  
+
 .connect i {
   padding: 15px;
   margin: 15px;
   border: white 1px solid;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
-footer.page-footer{
-  background-color: rgba(237, 66, 100, 0.835)
+footer.page-footer {
+  background-color: rgba(237, 66, 100, 0.835);
 }
