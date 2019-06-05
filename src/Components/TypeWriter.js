@@ -9,10 +9,22 @@ class TypeWriter extends Component {
 
     return (
       <div>
-        <Row className="justify-content-center text-center">
+        <Row
+          className="justify-content-center text-center"
+          style={{
+            marginLeft: "0",
+            marginRight: "0"
+          }}
+        >
           <p className="typewriter  py-2">{greeting}</p>
         </Row>
-        <Row className="justify-content-center text-center ">
+        <Row
+          className="justify-content-center text-center "
+          style={{
+            marginLeft: "0",
+            marginRight: "0"
+          }}
+        >
           <p className="typewriter other py-2 mb-5 ">
             {fullStack}
             <span className="blinker">|</span>

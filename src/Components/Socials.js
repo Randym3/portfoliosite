@@ -10,7 +10,13 @@ class Socials extends Component {
           If you're interested in collaborating, feel free to contact me!
         </p>
         <hr style={{ borderColor: "#DCDCDC", width: "50%" }} />
-        <Row className="justify-content-center   ">
+        <Row
+          className="justify-content-center"
+          style={{
+            marginLeft: "0",
+            marginRight: "0"
+          }}
+        >
           <Col className="social" xl={4} lg={5} md={6} xs={10}>
             <h3>Socials</h3>
             <a href="https://www.linkedin.com/in/randy-meneses-00699b12a/">

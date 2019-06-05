@@ -6,7 +6,13 @@ class AboutMe extends Component {
   render() {
     return (
       <div className="about-me aboutMe">
-        <Row className=" justify-content-around">
+        <Row
+          className=" justify-content-around"
+          style={{
+            marginLeft: "0",
+            marginRight: "0"
+          }}
+        >
           <Col className=" pb-5" xl={6} lg={10} xs={12}>
             <h2>About Me</h2>
             <hr />

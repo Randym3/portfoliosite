@@ -10,7 +10,13 @@ class Skills extends Component {
           <p>If it adds value to your company, I'll learn it.</p>
           <hr />
 
-          <Row className=" justify-content-center align-items-center pb-5">
+          <Row
+            className=" justify-content-center align-items-center pb-5"
+            style={{
+              marginLeft: "0",
+              marginRight: "0"
+            }}
+          >
             <Col xs={4} sm={4} md={3}>
               <i className="fab fa-html5" /> <br /> Html5
             </Col>
