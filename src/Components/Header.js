@@ -34,43 +34,42 @@ class Header extends Component {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link>
-              <Link
-                activeClass="active"
-                to="aboutMe"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                About Me
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              {" "}
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                Projects
-              </Link>
-            </Nav.Link>
+            <Link
+              style={{ cursor: "pointer" }}
+              className="nav-link"
+              activeClass="active"
+              to="aboutMe"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              About Me
+            </Link>{" "}
+            <Link
+              style={{ cursor: "pointer" }}
+              className="nav-link"
+              activeClass="active"
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Projects
+            </Link>
           </Nav>
           <Nav>
-            <Nav.Link>
-              {" "}
-              <Link
-                activeClass="active"
-                to="contactMe"
-                spy={true}
-                smooth={true}
-                duration={500}
-              >
-                Contact Me
-              </Link>
-            </Nav.Link>
+            {" "}
+            <Link
+              style={{ cursor: "pointer" }}
+              className="nav-link"
+              activeClass="active"
+              to="contactMe"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
+              Contact Me
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

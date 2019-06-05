@@ -8,13 +8,19 @@ class Projects extends Component {
     return (
       <div className="project-row projects">
         <h1 className="text-center">Projects</h1>
-        <p className="text-center">
+        <p className="text-center p-4">
           I am constantly working on side projects; they are only displayed here
           once I am satisfied with them.
         </p>
         <hr />
-        <Row className="  justify-content-center  ">
-          <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
+        <Row
+          className="  justify-content-center"
+          style={{
+            marginLeft: "0",
+            marginRight: "0"
+          }}
+        >
+          <Col className="m-5" xl={3} md={8} sm={10}>
             <Card className="p-2" style={{ minWidth: "350px" }}>
               <Card.Img variant="top" src={ProjectOne} />
               <Card.Body>
@@ -25,12 +31,12 @@ class Projects extends Component {
                 </Card.Text>
                 <a href="https://flixify.netlify.com" target="blank">
                   <Button className="m-2" variant="warning">
-                    <i class="fas fa-eye" /> Live Demo
+                    <i className="fas fa-eye" /> Live Demo
                   </Button>
                 </a>
                 <a href="https://github.com/Randym3/flixify" target="blank">
                   <Button className="m-2" variant="warning">
-                    <i class="fas fa-code" /> {` `}
+                    <i className="fas fa-code" /> {` `}
                     View Code
                   </Button>
                 </a>
@@ -38,7 +44,7 @@ class Projects extends Component {
             </Card>
           </Col>
 
-          <Col className="m-5" xl={3} md={8} sm={10} xs={12}>
+          <Col className="m-5" xl={3} md={8} sm={10}>
             <Card className="p-2" style={{ minWidth: "350px" }}>
               <Card.Img variant="top" src={ProjectTwo} />
               <Card.Body>
@@ -49,7 +55,7 @@ class Projects extends Component {
                 </Card.Text>
                 <a href="https://Randym3.netlify.com" target="blank">
                   <Button className="m-2" variant="warning">
-                    <i class="fas fa-eye" /> Live Demo
+                    <i className="fas fa-eye" /> Live Demo
                   </Button>
                 </a>
                 <a
@@ -57,7 +63,7 @@ class Projects extends Component {
                   target="blank"
                 >
                   <Button className="m-2" variant="warning">
-                    <i class="fas fa-code" /> {` `}
+                    <i className="fas fa-code" /> {` `}
                     View Code
                   </Button>
                 </a>

@@ -4,14 +4,14 @@ import { Row, Col } from "react-bootstrap";
 class Socials extends Component {
   render() {
     return (
-      <div className=" p-5 connect text-center contactMe">
+      <div className=" p-3 connect text-center contactMe">
         <h2>Connect With Me</h2>
         <p style={{ color: "#DCDCDC" }}>
           If you're interested in collaborating, feel free to contact me!
         </p>
         <hr style={{ borderColor: "#DCDCDC", width: "50%" }} />
-        <Row className="justify-content-around  ">
-          <Col className="socials py-5" xl={6} lg={10} xs={10}>
+        <Row className="justify-content-center   ">
+          <Col className="social" xl={4} lg={5} md={6} xs={10}>
             <h3>Socials</h3>
             <a href="https://www.linkedin.com/in/randy-meneses-00699b12a/">
               <i className="fab fa-linkedin-in" />
@@ -26,7 +26,7 @@ class Socials extends Component {
             </a>
           </Col>
 
-          <Col className="contact" xl={6} lg={10} xs={12}>
+          <Col className="contact" xl={4} lg={5} md={6} xs={12}>
             <h3>Say hello:</h3>
             <i className="far fa-map-marker-alt" />
             <br />
