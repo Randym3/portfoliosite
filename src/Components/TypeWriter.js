@@ -5,7 +5,7 @@ import { Row } from "react-bootstrap";
 class TypeWriter extends Component {
   render() {
     const greeting = "RANDY MENESES";
-    const fullStack = "Web Developer";
+    const fullStack = "Full-Stack Web Developer";
 
     return (
       <div>
@@ -16,7 +16,7 @@ class TypeWriter extends Component {
             marginRight: "0"
           }}
         >
-          <p className="typewriter  py-2">{greeting}</p>
+          <p className="typewriter pt-2  ">{greeting}</p>
         </Row>
         <Row
           className="justify-content-center text-center "
@@ -25,7 +25,7 @@ class TypeWriter extends Component {
             marginRight: "0"
           }}
         >
-          <p className="typewriter other py-2 mb-5 ">
+          <p className="typewriter other pb-2">
             {fullStack}
             <span className="blinker">|</span>
           </p>

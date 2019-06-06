@@ -20,8 +20,8 @@ class Projects extends Component {
             marginRight: "0"
           }}
         >
-          <Col className="m-5" xl={4} md={8} sm={10}>
-            <Card className="p-2" style={{ minWidth: "350px" }}>
+          <Col className="mb-5" xl={4} md={6} sm={8} xs={12}>
+            <Card className="p-2">
               <Card.Img variant="top" src={ProjectOne} />
               <Card.Body>
                 <h2>Flixify</h2>
@@ -44,8 +44,8 @@ class Projects extends Component {
             </Card>
           </Col>
 
-          <Col className="m-5" xl={4} md={8} sm={10}>
-            <Card className="p-2" style={{ minWidth: "350px" }}>
+          <Col className="mb-5" xl={4} md={6} sm={8} xs={12}>
+            <Card className="p-2">
               <Card.Img variant="top" src={ProjectTwo} />
               <Card.Body>
                 <h2>RandyM3 - Portfolio</h2>

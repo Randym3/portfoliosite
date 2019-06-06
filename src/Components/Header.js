@@ -26,19 +26,13 @@ class Header extends Component {
     return (
       <Navbar
         variant={this.state.navbarvariant}
-        className={`text-center ${this.state.navbarclass}`}
+        className={`text-center ${this.state.navbarclass} `}
         expand="lg"
         fixed="top"
       >
-        <Navbar.Brand href="/">
-          <h3>
-            {" "}
-            <i class="fas fa-laptop-code" /> Randym3
-          </h3>
-        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
-          <Nav className="mr-auto">
+          <Nav>
             <Link
               style={{ cursor: "pointer" }}
               className="nav-link"
@@ -60,10 +54,7 @@ class Header extends Component {
               duration={500}
             >
               Projects
-            </Link>
-          </Nav>
-          <Nav>
-            {" "}
+            </Link>{" "}
             <Link
               style={{ cursor: "pointer" }}
               className="nav-link"
@@ -75,8 +66,14 @@ class Header extends Component {
             >
               Contact Me
             </Link>
-          </Nav>
+          </Nav>{" "}
         </Navbar.Collapse>
+        <Navbar.Brand style={{ padding: "0px 0px", margin: "0 auto" }} href="/">
+          <h3>
+            {" "}
+            <i class="fas fa-laptop-code" /> Randym3
+          </h3>
+        </Navbar.Brand>
       </Navbar>
     );
   }
