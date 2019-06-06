@@ -6,7 +6,7 @@ class Skills extends Component {
     return (
       <div className="skills-container">
         <Container className="text-center mb-5 pb-5 ">
-          <h1 className="py-4">Technological Skills</h1>
+          <h1 className="py-4">Skills</h1>
           <p>If it adds value to your company, I'll learn it.</p>
           <hr />
 
@@ -18,52 +18,62 @@ class Skills extends Component {
             }}
           >
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-html5" /> <br /> Html5
+              <i className="fab fa-html5" />
+              <p> Html5 </p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-css3-alt" /> <br /> Css3
+              <i className="fab fa-css3-alt" />
+              <p> Css3 </p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-js-square" /> <br /> Javascript
+              <i className="fab fa-js-square" />
+              <p> Javascript </p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fas fa-mobile" /> <br /> Responsive Design
+              <i className="fas fa-mobile" />
+              <p> Responsive Design </p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-react" /> <br />
-              ReactJS & Redux
+              <i className="fab fa-react" />
+              <p> ReactJS & Redux</p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-bootstrap" /> <br /> Bootstrap 4
+              <i className="fab fa-bootstrap" />
+              <p> Bootstrap 4 </p>
             </Col>
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-node-js" /> <br /> Node
-            </Col>
-
-            <Col xs={4} sm={4} md={3}>
-              <i className="fas fa-server" /> <br /> Express
+              <i className="fab fa-node-js" />
+              <p> Node </p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fas fa-database" /> <br /> PostgreSQL
+              <i className="fas fa-server" />
+              <p> Express </p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-git-square" /> <br /> Git
+              <i className="fas fa-database" />
+              <p> PostgreSQL </p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-github" /> <br /> GitHub
+              <i className="fab fa-git-square" />
+              <p> Git </p>
             </Col>
 
             <Col xs={4} sm={4} md={3}>
-              <i className="fab fa-npm" /> <br />
-              Node Package Manager
+              <i className="fab fa-github" />
+              <p> GitHub </p>
+            </Col>
+
+            <Col xs={4} sm={4} md={3}>
+              <i className="fab fa-npm" />
+              <p> Node Package Manager</p>
             </Col>
           </Row>
         </Container>

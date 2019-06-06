@@ -16,7 +16,7 @@ class AboutMe extends Component {
           <Col className=" pb-5" xl={6} lg={10} xs={12}>
             <h2>About Me</h2>
             <hr />
-            <h3>My name is Randy Meneses, and I'm a Web Developer</h3> <br />
+            <h5>My name is Randy Meneses, and I'm a Web Developer</h5> <br />
             <p>Firstly, I'd like to thank you for considering me.</p>
             <p>
               After I graduated from CSUF in January 2019, I wasn't sure what

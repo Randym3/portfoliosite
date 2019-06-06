@@ -1,10 +1,24 @@
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Spectral&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:500|Righteous&display=swap");
 body {
-  font-family: sans-serif !important;
+  font-family: "Spectral", Georgia, serif !important;
+  font-size: 1.5em !important;
 }
 p {
-  color: #333;
+  color: #706f6f;
+  line-height: 2em;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Righteous", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 2em !important;
+}
 .navbar-light .navbar-nav a.nav-link,
 .navbar-dark .navbar-nav a.nav-link {
   transition: all 0.3s ease-in-out;
@@ -67,23 +81,24 @@ nav.scrollingnav {
 
 @media screen and (max-width: 750px) {
   .typewriter {
-    font-size: 6vw;
+    font-size: 7vw;
   }
   .other {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
 /*Typewriter effect on landing page + styling */
 .typewriter {
-  width: 400px !important;
+  width: 500px !important;
   color: black;
   font-weight: bold;
-  text-shadow: #504e4e;
   white-space: nowrap;
   overflow: hidden;
   width: 30em;
   animation: type 2s steps(60, end);
+  font-family: "Righteous", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .other {
@@ -129,6 +144,7 @@ button.button-banner:hover {
 
 /* About Me */
 div.about-me {
+  background-color: #f8f8f8;
   margin-bottom: 0;
   padding: 150px 1em;
 }
@@ -167,19 +183,26 @@ div.project-row::after {
   position: absolute;
   height: 130px;
   width: 100%;
-  z-index: -1;
   content: "";
   transform-origin: top right;
   transform: skewY(2.5deg);
   background: linear-gradient(to left, #43c6ac, #f8ffae 70%);
 }
+div.skills-container::before {
+  position: absolute;
+  height: 75%;
+  z-index: -1;
+  width: 100%;
+  content: "";
+  transform-origin: top left;
+  transform: skewY(300deg);
+  background: #f8f8f8;
+}
 
 div.skills-container .col-sm-4 {
-  font-weight: bold;
   margin: 5px;
-  border: 2px #f36d48c7 solid;
-  font-size: 18px;
-  background-color: #f36d48c7;
+  border: 1px #7b48f3c7;
+  background-color: #48d9f3c7;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
 }
@@ -187,12 +210,13 @@ div.skills-container .col-sm-4 {
 div.skills-container .col-sm-4:hover {
   background-color: transparent;
   transform: scale(1.1);
-  color: #f36d48c7;
-  box-shadow: 0 7px 15px rgba(255, 52, 52, 0.4);
+  color: #484bf3c7;
+  box-shadow: 0 7px 15px rgba(130, 52, 255, 0.4);
 }
 
 div.skills-container i {
-  font-size: 30px;
+  font-size: 125%;
+  padding-top: 10px;
 }
 
 div.connect a {

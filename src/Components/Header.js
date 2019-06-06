@@ -30,7 +30,12 @@ class Header extends Component {
         expand="lg"
         fixed="top"
       >
-        <Navbar.Brand href="/">Randy Meneses</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <h3>
+            {" "}
+            <i class="fas fa-laptop-code" /> Randym3
+          </h3>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="mr-auto">

@@ -5,7 +5,7 @@ class Socials extends Component {
   render() {
     return (
       <div className=" p-3 connect text-center contactMe">
-        <h2>Connect With Me</h2>
+        <h1>Connect With Me</h1>
         <p style={{ color: "#DCDCDC" }}>
           If you're interested in collaborating, feel free to contact me!
         </p>
