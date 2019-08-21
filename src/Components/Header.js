@@ -8,7 +8,7 @@ class Header extends Component {
     navbarvariant: "light"
   };
 
-  listenScrollEvent = e => {
+  listenScrollEvent = () => {
     if (window.scrollY > 50) {
       this.setState({ navbarclass: "scrollingnav" });
       this.setState({ navbarvariant: "dark" });
@@ -30,7 +30,10 @@ class Header extends Component {
         expand="lg"
         fixed="top"
       >
-        <Navbar.Toggle aria-controls="navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="navbar-nav"
+          style={{ position: "absolute", top: "20px" }}
+        />
         <Navbar.Collapse id="navbar-nav">
           <Nav>
             <Link

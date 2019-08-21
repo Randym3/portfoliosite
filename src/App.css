@@ -19,6 +19,11 @@ h6 {
   letter-spacing: 5px;
   line-height: 2em !important;
 }
+a.nav-link {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 0 2px 4px black;
+}
 .navbar-light .navbar-nav a.nav-link,
 .navbar-dark .navbar-nav a.nav-link {
   transition: all 0.3s ease-in-out;
@@ -53,6 +58,7 @@ nav.scrollingnav {
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding-top: 100px;
   padding-bottom: 100px;
+  border-radius: 0 0 300% 300% / 0 0 50% 50%;
 }
 
 .page-logo {
@@ -218,6 +224,7 @@ div.skills-container i {
 div.connect a {
   text-decoration: none;
   color: #cfcfcf;
+  transition: all 250ms ease-in-out;
 }
 
 div.connect a:hover {
