@@ -35,7 +35,7 @@ class Projects extends Component {
                     <i className="fas fa-eye" /> Live Demo
                   </Button>
                 </a>
-                <a href="https://github.com/Randym3/flixify" target="blank">
+                <a href="https://github.com/Randym3/mylingo" target="blank">
                   <Button className="m-2" variant="outline-warning">
                     <i className="fas fa-code" /> {` `}
                     View Code
