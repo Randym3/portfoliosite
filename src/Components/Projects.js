@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Row, Col, Card, Button } from "react-bootstrap";
-import ProjectOne from "../Images/macbook.png";
+import ProjectOne from "../Images/flixify.png";
 import ProjectTwo from "../Images/portfolio.png";
 import ProjectThree from "../Images/mylingo.png";
+import ProjectFour from "../Images/watchful.png";
 
 class Projects extends Component {
   render() {
@@ -21,6 +22,31 @@ class Projects extends Component {
             marginRight: "0"
           }}
         >
+          <Col className="mb-5" xl={4} md={6} sm={8} xs={12}>
+            <Card className="p-2">
+              <Card.Img variant="top" src={ProjectFour} />
+              <Card.Body>
+                <h2>Watchful</h2>
+                <Card.Text>
+                  Full-stack JavaScript e-commerce project. I used React and
+                  Redux to manage state, users, and authentication; Node,
+                  Express, PostgreSQL and JSONWebToken on the backend <br /> Use{" "}
+                  <b>demo@watchful.com</b> and password <b>12345</b>
+                </Card.Text>
+                <a href="https://watchful-rm.herokuapp.com/" target="blank">
+                  <Button className="m-2" variant="outline-warning">
+                    <i className="fas fa-eye" /> Live Demo
+                  </Button>
+                </a>
+                <a href="https://github.com/Randym3/watchful" target="blank">
+                  <Button className="m-2" variant="outline-warning">
+                    <i className="fas fa-code" /> {` `}
+                    View Code
+                  </Button>
+                </a>
+              </Card.Body>
+            </Card>
+          </Col>
           <Col className="mb-5" xl={4} md={6} sm={8} xs={12}>
             <Card className="p-2">
               <Card.Img variant="top" src={ProjectThree} />

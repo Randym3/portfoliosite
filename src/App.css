@@ -1,8 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Spectral&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded:500|Righteous&display=swap");
 body {
-  font-family: "Spectral", Georgia, serif !important;
-  font-size: 1.5em !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px !important;
 }
 p {
   color: #706f6f;
@@ -17,12 +16,9 @@ h6 {
   font-family: "Righteous", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 5px;
-  line-height: 2em !important;
 }
 a.nav-link {
-  font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
-  text-shadow: 0 2px 4px black;
+  font-family: "Righteous", sans-serif;
 }
 .navbar-light .navbar-nav a.nav-link,
 .navbar-dark .navbar-nav a.nav-link {
@@ -167,6 +163,11 @@ div.about-me {
 
 div.project-row {
   background: linear-gradient(to left, #43c6ac, #f8ffae 70%);
+}
+div.project-row div.card {
+  max-width: 400px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 div.project-row::before {

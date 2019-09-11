@@ -45,7 +45,7 @@ class Header extends Component {
               smooth={true}
               duration={500}
             >
-              About Me
+              About
             </Link>{" "}
             <Link
               style={{ cursor: "pointer" }}
@@ -67,7 +67,7 @@ class Header extends Component {
               smooth={true}
               duration={500}
             >
-              Contact Me
+              Contact
             </Link>
           </Nav>{" "}
         </Navbar.Collapse>
