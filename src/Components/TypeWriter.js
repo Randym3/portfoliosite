@@ -5,7 +5,7 @@ import { Row } from "react-bootstrap";
 class TypeWriter extends Component {
   render() {
     const greeting = "RANDY MENESES";
-    const fullStack = "Full-Stack Web Developer";
+    const fullStack = "Web Developer";
 
     return (
       <div>
